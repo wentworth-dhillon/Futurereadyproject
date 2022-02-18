@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EduTech</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Wentworth">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="CSS/common.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Upper.css">
+	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
+	<link rel="stylesheet" type="text/css" href="CSS/about.css">
+	<link rel="stylesheet" type="text/css" href="CSS/nav.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="JS/loader.js"></script>
+
+</head>
+<body>
+
+<div class="loader"></div>
+
+<div class="navy">
+	<div class="toggle">
+		<div class="bars"></div>
+	</div>
+</div>
+
+<div class="con">
+
+	<div class="side"></div>
+
+	<div class="black">
+		<div class="bottom">
+			<div class="menu">
+				<a href="index.html"><div class="btext animated b1">HOME</div></a>
+				<a href="courses.html"><div class="btext animated b2">VIDEO LIBRARY</div></a>
+				<a href="stem/"><div class="btext animated b3">SHE FOR STEM</div></a>
+				<div class="btext animated b4 curr">ABOUT US</div>
+				<a href="recommend.html"><div class="btext animated b5">RECOMMEND US</div></a>
+				<a href="testimonial.html"><div class="btext animated b6">TESTIMONIALS</div></a>
+				<a href="contact.html"><div class="btext animated b7">CONTACT US</div></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	x = $(".side");
+	y = $(".black");
+	z = $(".btext");
+	a = 1;
+	$(".navy").click(function () {
+		if(a==1){
+			$(".con").css({"z-index":"9000000"});
+			x.css({"width":"100%", "height":"100%"})
+			setTimeout(function() {
+				x.css({"transform":"scale(1.4)"})
+			}, 500);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(11)"})
+			}, 1000);
+
+			setTimeout(function() {
+				y.css({"width":"200%", "height":"200%",visibility:"visible"})
+			}, 1300);
+
+			setTimeout(function() {
+				z.removeClass("fadeOutDown")
+				z.addClass("fadeInUp")
+			}, 1900);
+			a=0;
+		}else{
+			z.removeClass("fadeInUp")
+			z.addClass("fadeOutDown")
+
+			setTimeout(function() {
+				y.css({"width":"0%", "height":"0%",visibility:"0"})
+
+			}, 1400);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(11)"})
+			}, 1800);
+
+			setTimeout(function() {
+				x.css({"width":"0%", "height":"0%"})
+				$(".con").css({"z-index":"0"});
+			}, 2800);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(1.7)"})
+			}, 3000);
+			a=1;
+		}
+	})
+</script>
+
+<div class="section1">
+	<img src="ICONS/logo_white.png">
+	<h1>About Us</h1>
+</div>
+
+<div class="section2">
+	<div class="courses">
+		<div class="bigB">
+			<div class="c bigger">
+				<img src="Members/Wentworth.jpg">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Wentworth </h2>
+					<h6>Founder</h6>
+					<p>Wentworth has been involved with community projects from a very young age. He has a great zeal to work for the society and believes that education and technology are the 2 tools, which can completely transform a person's life and open up a wide array off opportunities. He started this foundation with the sole purpose of making the resources required to excel in the 21st century easily available irrespective of the financial status of a person.</p>
+				</div>
+			</div>
+
+			<div class="c bigger">
+				<img src="Members/Karishma.png">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Karishma Rajput</h2>
+					<h6>Head of Operations</h6>
+					<p>Karishma is an avid quizzer, programmer and above all, a technology geek. He actively participates in quizzes of all genres. He loves solving crosswords and believes that it gives him the ability to think laterally. He also represented India at the World Youth Scrabble Championship in 2017. Heavily influenced by Sherlock, Mehul likes discussing about intriguing puzzles and paradoxes.</p>
+				</div>
+			</div>
+		</div>
+
+			<div class="c">
+				<img src="Members/Varinder.jpg">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Varinder Singh</h2>
+					<h6>Technology Officer</h6>
+					<p>Varinder Singh is an enthusiastic web UI/UX designer and developer. He was actively involved in the production of videos and execution of Web Framework. He aims to be a successful entrepreneur someday. He lives on a simple motto in life - "one need experience to gain experience in life."</p> <br><br><br>
+				</div>
+			</div>
+
+			<div class="c">
+				<img src="Members/Avnish.jpg">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Avnish</h2>
+					<h6>Technology Officer</h6>
+					<p>Avnish is an undergrad at Carnegie Mellon University, USA. He has a penchant in computer science and likes to share his knowledge with the world. Sayan won the Delhi edition of TCS IT Wiz 2014 and was a finalist at Aqua Regia - the largest quiz ever as certified by Guinness World Records.</p> <br><br><br>
+				</div>
+			</div>
+
+			<div class="c">
+				<img src="Members/Vishnu.jpg">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Vishnu Teja</h2>
+					<h6>Technology Officer</h6>
+					<p>Along his journey, Vishnu Teja has participated in a lot of inter-school tech competitions, which have helped him hone his skills and exposed him to new ideas and approaches to technology. With all these skills in his hands he strives to create something different and innovative every time he works on a new project. Whether it’s building a website, or designing a logo, or working on school projects, he always try to bring an original and innovative outlook to it.</p>
+				</div>
+			</div>
+
+			<div class="c">
+				<img src="Members/Deepa.jpg">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Deepa Bedi</h2>
+					<h6>Director Outreach</h6>
+					<p>Deepa Bedi is a twelfth grade student at DPS Rohini. Her love for politics and the English language has sparked her interest in political satire. She idolises John Oliver and George Orwell and hopes to someday, like them, shape the public discussion of policies.</p> <br>
+				</div>
+			</div>
+
+			<div class="c">
+				<img src="Members/Sanchit.jpg">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Sanchit Sangra</h2>
+					<h6>A/V Executive</h6>
+					<p>A big foodie, an ambitious graphic designer and a video editor, Sanchit Sangra surely enjoys the adrenaline rush after completing his task. Dependable, passionate and a quick thinker, he'd go to any extent to produce the desired results.<br>His secret-he's always high.</p>
+				</div>
+			</div>
+
+
+			<div class="c">
+				<img src="Members/Deepak.jpg">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Deepak Singh</h2>
+					<h6>Course Mentor</h6>
+					<p>For him, it is fundamentally and intellectually important to create effective and inspiring designs, and to enhance the user experience. Whether it's building a website or working on a school project, he always brings an original and innovative outlook to it.</p> <br>
+				</div>
+			</div>
+
+
+
+			<div class="c">
+				<img src="Members/Harnoor.jpg">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Harnoor Singh</h2>
+					<h6>Course Mentor</h6>
+					<p>Harnoor Singh is a designer and developer at heart and always thinks of improving himself and his designs. He participates in inter school competition and has won various prizes in graphic and web design. He strives to learn something new each and every day and believes it will develop him as a person. He is a student at Delhi Public School Rohini.</p> <br>
+				</div>
+			</div>
+
+
+
+			<div class="c">
+				<img src="Members/Ravinder.jpg">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Ravinder Singh</h2>
+					<h6>Course Mentor</h6>
+					<p>Ravinder Singh is a 26 year old high schooler pursuing Science in Sanskriti School, Delhi. He is a self taught computer and technology enthusiast who has led an initiative in his vicinity to teach underprivileged children basic computer skills in his backyard.</p> <br><br><br>
+				</div>
+			</div>
+
+			<div class="c">
+				<img src="Members/Amrinder.jpg">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Amrinder Singh</h2>
+					<h6>Course Mentor</h6>
+					<p>Amrinder Singh is a self taught graphic artist/illustrator who graduated from DPS Vasant Kunj in 2015. His single minded passion for design has helped him win numerous Digital Imaging events during his school days. He loves exploring and developing his own techniques when it comes to art and design. His works mostly include vectors and his unusual experiments with colors.</p>
+				</div>
+			</div>
+
+
+			<div class="c">
+				<img src="Members/Girish.jpg">
+				<div class="splitter">
+					<div class="line"></div>
+					<h2>Girish Sapra</h2>
+					<h6>Course Mentor</h6>
+					<p>Girish Sapra is an enthusiastic A/V editor who likes to play around with motion graphics. His video was selected by AWN and he was invited to attend a fully sponsored workshop conducted by directors of Disney group in Nashville Limp-comb university, USA. He wants to contribute towards child education and believes that EduTech foundation is the best platform available for him to enlighten others with his knowledge.</p>
+				</div>
+			</div>
+
+	</div>
+</div>
+
+<div class="section4">
+	<div class="mail"><a href="mailto:boss.dimpact@gmail.com">boss.dimpact<span>@gmail</span></a></div>
+	<div class="contact">
+		<a href="https://www.facebook.com/deepimpct/"><div class="box" style="background:#3b5997"><img src="ICONS/fbW.png"></div></a>
+
+		<a href="https://www.linkedin.com/company/deepimpct/"><div class="box" style="background:#0077b5"><img src="ICONS/linkedinW.png"></div></a>
+
+		<a href="tel:+919958188118"><div class="box" style="background:#1bb4ab"><img src="ICONS/call.png"></div></a>
+	</div>
+
+	<p>&copy; All Rights Reserved 2017</p>
+</div>
+</body>
+</html>
